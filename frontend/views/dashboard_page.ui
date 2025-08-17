@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DashboardPage</class>
+ <widget class="QWidget" name="DashboardPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>405</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="root" stretch="0,1">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>8</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="row1" stretch="1,1">
+     <item>
+      <widget class="QFrame" name="Card1">
+       <layout class="QVBoxLayout" name="c1">
+        <item>
+         <widget class="QLabel" name="CardTitle1">
+          <property name="text">
+           <string>Orders</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="CardNumber1">
+          <property name="text">
+           <string>2,345</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="barOrders">
+          <property name="value">
+           <number>70</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="Card2">
+       <layout class="QVBoxLayout" name="c2">
+        <item>
+         <widget class="QLabel" name="CardTitle2">
+          <property name="text">
+           <string>Revenue</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="CardNumber2">
+          <property name="text">
+           <string>$25,324</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="barRevenue">
+          <property name="value">
+           <number>55</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="row2" stretch="1,1">
+     <item>
+      <widget class="QFrame" name="Card3">
+       <layout class="QVBoxLayout" name="c3">
+        <item>
+         <widget class="QLabel" name="CardTitle3">
+          <property name="text">
+           <string>Shipments</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="CardNumber3">
+          <property name="text">
+           <string>76%</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="barShip">
+          <property name="value">
+           <number>76</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="Card">
+       <layout class="QVBoxLayout" name="c4">
+        <item>
+         <widget class="QLabel" name="CardTitle">
+          <property name="text">
+           <string>Activity</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableActivity">
+          <row/>
+          <column>
+           <property name="text">
+            <string>Day</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Count</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

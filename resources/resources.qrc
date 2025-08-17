@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="/">
+    <!-- icons -->
+    <file>icons/logo.svg</file>
+    <file>icons/dashboard.svg</file>
+    <file>icons/orders.svg</file>
+    <file>icons/clients.svg</file>
+    <file>icons/reports.svg</file>
+    <file>icons/settings.svg</file>
+    <file>icons/bell.svg</file>
+    <file>icons/search.svg</file>
+    <file>icons/sun.svg</file>
+    <file>icons/moon.svg</file>
+
+    <!-- fonts (optional) -->
+    <file>fonts/Inter-Regular.ttf</file>
+    <file>fonts/Inter-SemiBold.ttf</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientsPage</class>
+ <widget class="QWidget" name="ClientsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>274</width>
+    <height>290</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="root">
+   <item>
+    <widget class="QLabel" name="title">
+     <property name="styleSheet">
+      <string>font-weight:700; font-size: 14pt;</string>
+     </property>
+     <property name="text">
+      <string>Clients</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="Card">
+     <layout class="QHBoxLayout" name="top">
+      <item>
+       <widget class="QLineEdit" name="txtClientSearch">
+        <property name="placeholderText">
+         <string>Search client…</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Primary">
+        <property name="text">
+         <string>New Client</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableClients"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

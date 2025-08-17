@@ -1,29 +1,31 @@
-QT       += core gui
+QT       += widgets
+# (optional if you later add QtCharts)
+# QT       += charts
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+CONFIG   += c++17
 
-CONFIG += c++17
+# UI forms
+FORMS += \
+    frontend/views/clients_page.ui \
+    frontend/views/dashboard_page.ui \
+    frontend/views/mainwindow.ui \
+    frontend/views/orders_page.ui \
+    frontend/views/settings_page.ui
 
-# You can make your code fail to compile if it uses deprecated APIs.
-# In order to do so, uncomment the following line.
-#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+# headers/sources
+HEADERS += \
+    frontend/views/clients_page.h \
+    frontend/views/dashboard_page.h \
+    frontend/views/mainwindow.h \
+    frontend/views/orders_page.h \
+    frontend/views/settings_page.h
 
 SOURCES += \
+    frontend/views/clients_page.cpp \
+    frontend/views/dashboard_page.cpp \
+    frontend/views/orders_page.cpp \
+    frontend/views/settings_page.cpp \
     main.cpp \
-    mainwindow.cpp
+    frontend/views/mainwindow.cpp
 
-HEADERS += \
-    mainwindow.h
-
-FORMS += \
-    mainwindow.ui
-
-TRANSLATIONS += \
-    delivery_project_en_CA.ts
-CONFIG += lrelease
-CONFIG += embed_translations
-
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+RESOURCES += resources/resources.qrc

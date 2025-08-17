@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OrdersPage</class>
+ <widget class="QWidget" name="OrdersPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>274</width>
+    <height>292</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="root">
+   <item>
+    <widget class="QLabel" name="title">
+     <property name="styleSheet">
+      <string>font-weight:700; font-size: 14pt;</string>
+     </property>
+     <property name="text">
+      <string>Orders</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="Card">
+     <layout class="QVBoxLayout" name="filters">
+      <item>
+       <layout class="QHBoxLayout" name="frow">
+        <item>
+         <widget class="QLineEdit" name="txtOrderSearch">
+          <property name="placeholderText">
+           <string>Search order…</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Primary">
+          <property name="text">
+           <string>Create Order</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableOrders"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
